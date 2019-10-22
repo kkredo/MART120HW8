@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8"
+    <meta name="viewport"
+    content="width=device-width,
+    initial-scale=1.0">
+    <meta name="description"
+    content="Welcome to my site!"
+    <meta name="author"
+    content="Kyle Kredo">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>MART120HTML</title>
+    <script type="text/javascript">
+                  function checkNameEmail(){
+                      var returnValue;
+                      var email=document.getElementById("Name").value;
+                      var email=document.getElementById("Email").value;
+                      var yesNo=document.getElementById("yesNo").value;
+
+                        returnValue=true;
+                        document.getElementById("Name").style.background = "white";
+                        document.getElementById("Email").style.background = "white";
+                        document.getElementById("yesNo").style.background = "white";
+
+                        if(name.trim()==){
+                            document.getElementById("Name").style.background = "red";
+                            alert("Name must be completed")
+                            document.getElementById("Name").focus();
+                            returnValue=false;
+                        }else if(email.trim()=="")}
+                            document.getElementById("Email").style.background = "red";
+                            alert("Email must be completed")
+                            document.getElementById("Email").focus();
+                            returnValue=false;
+                          }else if(yesNo.trim()=="No")}
+                              document.getElementById("yesNo").style.background = "red";
+                              alert("Must accept the terms")
+                              document.getElementById("yesNo").focus();
+                              returnValue=false;
+                        }else{
+                            alert(Thank you for reaching out! I will be in contact with you shortly!);
+                            document.getElementById("Name").value="";
+                            document.getElementById("Email").value="";
+                        }
+                        console.log(returnValue);
+                        return returnValue;
+                      }
+                    </script>
+
+
+  <body>
+  <style>
+    h1, h2 {font-family: arial;}
+    body {font-family: sans-serif;}
+  </style>
+
+  <h1>Contact Me</h1>
+  <button type="button" class="btn btn-primary">Facebook</button>
+  <button type="button" class="btn btn-success">Instagram</button>
+  <button type="button" class="btn btn-danger">Pinterest</button>
+  <br><br>
+  <form action="javascript:checkNameEmail();">
+    <p>Name: <input type="text" id="Name"></p>
+    <p>Email: <input type="text" id="Email"></p> <br>
+           <p>Terms of Agreement</p> Agree:<input type="radio" name="Yes" value"Y">
+           Disagree:<input type="radio" name="No" value"Y">
+           <br><br>
+           <button id="mySubmit" type="submit">Submit</button>
+       </form>
+<br><br>
+
+       <a href="PageOne.html">Home Page</a>
+   </body>
+</html>
